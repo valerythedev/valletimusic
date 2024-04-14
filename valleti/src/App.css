@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 20em;
+  padding: 1.5em;
+  will-change: filter, transform; /* Added transform for animation */
+  transition: filter 300ms;
+  animation: logo-spin infinite 10s linear; /* Applied animation to .logo */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #d64400bb);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo {
+    animation: none; /* Disable animation for users who prefer reduced motion */
+  }
+}
